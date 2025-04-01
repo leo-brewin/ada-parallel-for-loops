@@ -4,7 +4,7 @@ My research interests are in an area of computational science where a single cod
 
 The executive summary? Ada does a great job (but of course it does 😎)
 
-The detailed account can be found in pdf file `doc/for-loop-tasking.pdf`.
+The detailed account can be found in the pdf file `doc/for-loop-tasking.pdf`.
 
 ## The target code
 
