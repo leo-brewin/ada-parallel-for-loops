@@ -1,0 +1,13 @@
+# liguist assumes anything in 'examples' is documentation and is thus excluded from the stats
+# so use -linguist-documentation to override and force all files in 'examples' to be included in the stats
+# see the list of paths considered as documentation in
+#   https://github.com/github-linguist/linguist/blob/main/lib/linguist/documentation.yml
+# see also main linguist info here
+#   https://github.com/github-linguist/linguist/blob/main/docs/overrides.md#using-gitattributes
+
+examples/** -linguist-documentation
+
+*.ad linguist-language=Ada
+*.adb linguist-language=Ada
+*.ads linguist-language=Ada
+*.adt linguist-language=Ada

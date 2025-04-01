@@ -1,0 +1,21 @@
+with "common.gpr";
+
+Project Build is
+
+   for Main use ("ex1a.adb", "ex1b.adb", "ex1c.adb",
+                 "ex2a.adb", "ex2b.adb",
+                 "ex3a.adb", "ex3b.adb",
+                 "ex4a.adb", "ex4b.adb",
+                 "lwt1a.adb", "lwt1b.adb",
+                 "lwt2a.adb", "lwt2b.adb");
+
+   for Source_Dirs use (".","support","lwt");
+   for Object_Dir  use Common'Object_Dir;
+   for Exec_Dir    use Common'Exec_Dir;
+
+   package Compiler renames Common.Compiler;
+   package Builder  renames Common.Builder;
+   package Binder   renames Common.Binder;
+   package Linker   renames Common.Linker;
+
+end Build;

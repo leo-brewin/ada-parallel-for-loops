@@ -1,0 +1,15 @@
+.DS_Store
+.tm_properties
+*.lb
+*.log
+*.toc
+*.out
+*.aux
+*.cut
+*.blg
+*.synctex.gz
+alire
+hide
+private
+TO-DO.txt
+UUID.txt

@@ -1,0 +1,10 @@
+-- 20 Jan 2025
+
+ex1 : Uses rendezvous calls for multitaksing. Tasks created within procedure calls. Tasks are transient.
+ex2 : As per ex1 but tasks exist for the duration of the program. Tasks are presistent.
+ex3 : As per ex2 with small changes to use Ada.Synchronous_Barriers. Tasks are presistent.
+ex4 : Uses proteced objects for multitasking. Tasks are presistent.
+
+There are two version of each example code.
+Version a: Includes put_line's to show the sequence of procedure/object/rendezvous calls.
+Version b: No put_line's. Useful for timing. Also makes the code structure more readable with less clutter.

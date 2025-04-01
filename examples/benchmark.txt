@@ -1,0 +1,42 @@
+bin/ex1b : NumTasks =  1, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time = 178.8
+bin/ex2b : NumTasks =  1, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time = 178.1
+bin/ex3b : NumTasks =  1, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time = 178.2
+bin/ex4b : NumTasks =  1, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time = 178.6
+bin/lwt1b: NumTasks =  1, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time = 178.2
+bin/lwt2b: NumTasks =  1, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time = 177.9
+bin/ex1b : NumTasks =  2, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  88.7
+bin/ex2b : NumTasks =  2, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  88.7
+bin/ex3b : NumTasks =  2, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  88.9
+bin/ex4b : NumTasks =  2, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  88.8
+bin/lwt1b: NumTasks =  2, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  88.4
+bin/lwt2b: NumTasks =  2, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  88.4
+bin/ex1b : NumTasks =  4, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  44.2
+bin/ex2b : NumTasks =  4, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  44.3
+bin/ex3b : NumTasks =  4, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  44.3
+bin/ex4b : NumTasks =  4, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  44.2
+bin/lwt1b: NumTasks =  4, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  44.3
+bin/lwt2b: NumTasks =  4, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  44.3
+bin/ex1b : NumTasks =  8, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  22.2
+bin/ex2b : NumTasks =  8, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  22.1
+bin/ex3b : NumTasks =  8, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  22.1
+bin/ex4b : NumTasks =  8, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  22.1
+bin/lwt1b: NumTasks =  8, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  22.2
+bin/lwt2b: NumTasks =  8, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  22.2
+bin/ex1b : NumTasks = 16, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  11.3
+bin/ex2b : NumTasks = 16, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  11.3
+bin/ex3b : NumTasks = 16, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  11.3
+bin/ex4b : NumTasks = 16, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  11.3
+bin/lwt1b: NumTasks = 16, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  11.3
+bin/lwt2b: NumTasks = 16, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  11.3
+bin/ex1b : NumTasks = 32, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.6
+bin/ex2b : NumTasks = 32, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.6
+bin/ex3b : NumTasks = 32, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.6
+bin/ex4b : NumTasks = 32, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.6
+bin/lwt1b: NumTasks = 32, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.5
+bin/lwt2b: NumTasks = 32, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.5
+bin/ex1b : NumTasks = 64, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.9
+bin/ex2b : NumTasks = 64, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.9
+bin/ex3b : NumTasks = 64, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.9
+bin/ex4b : NumTasks = 64, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.8
+bin/lwt1b: NumTasks = 64, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.7
+bin/lwt2b: NumTasks = 64, NumLoop = 1, NumData = 1000000, RndScale =  1.000E-04, Time =  10.8
