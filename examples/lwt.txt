@@ -1,17 +1,13 @@
 -- 24 Jan 2025
 
-The Lightweight Threads Library (lwt) is part of (but entirely independent of) the ParaSail library.
+The Lightweight Threads Library (LWT) is part of (but entirely independent of) the ParaSail library.
 
 I git cloned parasail and then I copied the lwt directory to here.
-I also added two of my own Makefile's (one in ./lwt and one in ./lwt/examples)
+I also added build.sh and build.gpr to ./lwt/examples. This allows
+the examples to be compiled by simply running build.sh (in lwt/examples).
 
    https://github.com/parasail-lang/parasail/tree/main
 
 See also
    https://forum.ada-lang.io/t/lightweight-parallelism-library-based-on-ada-2022-features/516
    https://forum.ada-lang.io/t/news-on-the-parallelism-front/1224/3
-
-For examples of my use of lwt see
-
-   ~/GitHub/leo-brewin/ada-for-loop-tasks/code/
-   file:5E3109BF-67D1-4F2D-95A1-10F4F8E693B1

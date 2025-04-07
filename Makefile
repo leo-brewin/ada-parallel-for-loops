@@ -12,3 +12,4 @@ veryclean:
 pristine:
 	@ make veryclean
 	@ (cd examples; rm -rf bin obj)
+	@ (cd examples/lwt/examples; rm -rf bin obj)

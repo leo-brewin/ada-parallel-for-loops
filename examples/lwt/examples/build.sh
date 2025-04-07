@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source alire.ini
+source ../../alire.ini
 
 export FILES=$(ls *.adb | xargs)
 

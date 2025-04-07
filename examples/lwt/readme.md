@@ -1,9 +1,7 @@
 
 # Light-Weight Threading Library for Ada 2022
 
-This is a light-weight threading library that provides many of
-the features defined for Ada 2022, without depending on support
-for the new "parallel" loop or block syntax.
+This is a light-weight threading library that provides many of the features defined for Ada 2022, without depending on support for the new "parallel" loop or block syntax.
 
 Here is some background on how this library was mapped to OpenMP (note that this LWT library is _not_ under the language-defined package "System" even though that might be its ultimate resting place in a full Ada 2022 implementation):
 - A powerpoint on the [Ada 2022 lightweight parallelism features and their implementation][ada2022_powerpoint], including on top of OpenMP
@@ -12,25 +10,23 @@ Here is some background on how this library was mapped to OpenMP (note that this
 [ada2022_powerpoint]: https://drive.google.com/file/d/156vq44aK2FF60cbd_I8hIOXmqEGjl1H7
 [ada2022_parallelism_ai]: https://docs.google.com/document/d/1biJ8v2m4CGcNd1qnRYsZc4J87OLHG12qXZgBoiTC_V8
 
-The ParaSail interpreter/compiler has its own version of this
-library built into the code in interpreter/psc-interpreter.adb.
-At some point we will shift it to use the code in this "lwt" library.
+The ParaSail interpreter/compiler has its own version of this library built into the code in interpreter/psc-interpreter.adb. At some point we will shift it to use the code in this "lwt" library.
 
 This library is organized as follows:
 
 | file | Description |
 | --- | --- |
 | lwt.ads | LWT root package
-| lwt-scheduler.ads  | LWT Scheduler, the primary API for using light-weight threading
-| lwt-openmp.ads  | OpenMP interface.  Declaring an object of type OMP_Parallel indicates that the current task (if declared in a task body) or the environment task (if declared in the main subprogram) wants OpenMP to manage the light-weight threads.
-| lwt-work_stealing.ads  | Work-Stealing Scheduler interface.  Declaring an object of type WS_Parallel indicates that the current task (if declared in a task body) or the environment task (if declared in the main subprogram) wants the Work-Stealing scheduler to manage the light-weight threads.
-| lwt-parallelism.ads   | Some useful generic packages for creating parallel loops, plus a package Parallel_Iterator_Interfaces which provides the parallel iteration capability added to the Ada.Iterator_Interfaces by Ada 2022.
-| lwt-vector_par_iterator.ads   | Provides an implementation of the Parallel_Iterator'Class for Ada.Containers.Vectors
-| lwt-hashed_map_par_iterator.ads   | Provides an implementation of the Parallel_Iterator'Class for Ada.Containers.Hashed_Maps
-| examples/*.adb  | Several examples of using the LWT library, making use of both the OpenMP and the Work-Stealing schedulers.  `gprbuild *.adb` in the examples directory will build all of the executables and put them in the "obj" subdirectory.
+| lwt-scheduler.ads  | LWT Scheduler, the primary API for using light-weight threading|
+| lwt-openmp.ads  | OpenMP interface.  Declaring an object of type OMP_Parallel indicates that the current task (if declared in a task body) or the environment task (if declared in the main subprogram) wants OpenMP to manage the light-weight threads.|
+| lwt-work\_stealing.ads  | Work-Stealing Scheduler interface.  Declaring an object of type WS_Parallel indicates that the current task (if declared in a task body) or the environment task (if declared in the main subprogram) wants the Work-Stealing scheduler to manage the light-weight threads.|
+| lwt-parallelism.ads   | Some useful generic packages for creating parallel loops, plus a package Parallel_Iterator_Interfaces which provides the parallel iteration capability added to the Ada.Iterator_Interfaces by Ada 2022.|
+| lwt-vector\_par\_iterator.ads   | Provides an implementation of the Parallel_Iterator'Class for Ada.Containers.Vectors
+| lwt-hashed\_map\_par\_iterator.ads   | Provides an implementation of the Parallel\_Iterator'Class for Ada.Containers.Hashed_Maps|
+| examples/\*.adb  | Several examples of using the LWT library, making use of both the OpenMP and the Work-Stealing schedulers.  `gprbuild *.adb` in the examples directory will build all of the executables and put them in the `obj` subdirectory.|
 | common.gpr and examples/prj.gpr | Project files for building lwt library and examples
-| lwt-scheduler-*.ad{s,b} | Plug-in schedulers
-| other lwt-*.ad{s,b} | Other aspects of implementation of the various interfaces.
+| lwt-scheduler-\*.ad{s,b} | Plug-in schedulers|
+| other lwt-\*.ad{s,b} | Other aspects of implementation of the various interfaces.|
 
 Here is the spec for the LWT.Scheduler package:
 ```ada

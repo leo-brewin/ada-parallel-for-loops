@@ -1,0 +1,10 @@
+with "../common.gpr";
+project Build is
+   for Main use External_As_List ("FILES", " ");
+   for Source_Dirs use (".","..");
+   for Object_Dir use "obj";
+   for Exec_dir   use "bin";
+   package Linker is
+      for Default_Switches ("ada") use ("-Wl,-ld_classic");
+   end Linker;
+end Build;
